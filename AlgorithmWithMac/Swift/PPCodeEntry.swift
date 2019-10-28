@@ -9,4 +9,13 @@
 import Foundation
 
 
-//import PPTree
+open class PPCodeEntry : NSObject {
+    public override init() {
+        let tree = PPSearchTree.init()
+        tree.insert(num: 4)
+    }
+    
+    @objc func printLog() -> Void {
+        print("Swft算法入口")
+    }
+}

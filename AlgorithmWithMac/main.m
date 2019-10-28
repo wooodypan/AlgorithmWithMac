@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <AlgorithmWithMac-Swift.h>
+#import <Foundation/Foundation.h>
 //struct BinaryTreeNode {
 //    int val;
 //    BinaryTreeNode left;
@@ -22,11 +24,15 @@
 
 
 int main(int argc, const char * argv[]) {
+    PPCodeEntry *link = [[PPCodeEntry alloc] init];
+    [link printLog];
+    //---------------断点-----------------
+    NSLog(@"====");
 //    struct BinaryTreeNode root1={
 //        1,NULL,NULL};
 //    root1->val = 1;
 //    preOrder(root1);
-    main_linkTable1();
+//    main_linkTable1();
     @autoreleasepool {
         // Setup code that might create autoreleased objects goes here.
     }

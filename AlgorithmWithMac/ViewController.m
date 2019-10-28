@@ -7,14 +7,16 @@
 //
 
 #import "ViewController.h"
-#import <AlgorithmWithMac-Swift.h>
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    PPLinkList *link = [[PPLinkList alloc] init];
-    [link reverseLinkList];
+    
+    
+//    PPSearchTree *search = [PPSearchTree new];
+//    [search insert:2];
+    
     // Do any additional setup after loading the view.
 }
 
