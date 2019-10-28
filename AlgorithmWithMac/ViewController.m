@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import <AlgorithmWithMac-Swift.h>
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    PPLinkList *link = [[PPLinkList alloc] init];
+    [link reverseLinkList];
     // Do any additional setup after loading the view.
 }
 

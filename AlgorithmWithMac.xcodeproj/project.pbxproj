@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60227EA923667E7000F3405D /* PPLinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60227EA823667E7000F3405D /* PPLinkList.swift */; };
+		60227EAC2367209E00F3405D /* PPCodeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60227EAB2367209E00F3405D /* PPCodeEntry.swift */; };
+		60227EAE236720B400F3405D /* PPTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60227EAD236720B400F3405D /* PPTree.swift */; };
 		60B29130236178460076FD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2912F236178460076FD2A /* AppDelegate.m */; };
 		60B29133236178460076FD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B29132236178460076FD2A /* ViewController.m */; };
 		60B291352361784C0076FD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B291342361784C0076FD2A /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		60B2913B2361784C0076FD2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2913A2361784C0076FD2A /* main.m */; };
 		60B291462361784C0076FD2A /* AlgorithmWithMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B291452361784C0076FD2A /* AlgorithmWithMacTests.m */; };
 		60B291512361784C0076FD2A /* AlgorithmWithMacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B291502361784C0076FD2A /* AlgorithmWithMacUITests.m */; };
+		60B2916023617D9A0076FD2A /* LinkTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60B2915E23617D9A0076FD2A /* LinkTable.cpp */; };
+		60B29175236181140076FD2A /* CPPAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60B29174236181140076FD2A /* CPPAdapter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60227EA723667E7000F3405D /* AlgorithmWithMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlgorithmWithMac-Bridging-Header.h"; sourceTree = "<group>"; };
+		60227EA823667E7000F3405D /* PPLinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPLinkList.swift; sourceTree = "<group>"; };
+		60227EAB2367209E00F3405D /* PPCodeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCodeEntry.swift; sourceTree = "<group>"; };
+		60227EAD236720B400F3405D /* PPTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTree.swift; sourceTree = "<group>"; };
 		60B2912B236178460076FD2A /* AlgorithmWithMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmWithMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B2912E236178460076FD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60B2912F236178460076FD2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +59,9 @@
 		60B2914C2361784C0076FD2A /* AlgorithmWithMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmWithMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B291502361784C0076FD2A /* AlgorithmWithMacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmWithMacUITests.m; sourceTree = "<group>"; };
 		60B291522361784C0076FD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B2915E23617D9A0076FD2A /* LinkTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkTable.cpp; sourceTree = "<group>"; };
+		60B2915F23617D9A0076FD2A /* LinkTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkTable.hpp; sourceTree = "<group>"; };
+		60B29174236181140076FD2A /* CPPAdapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPPAdapter.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60227EAA2367202000F3405D /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				60227EAB2367209E00F3405D /* PPCodeEntry.swift */,
+				60227EA823667E7000F3405D /* PPLinkList.swift */,
+				60227EAD236720B400F3405D /* PPTree.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		60B29122236178460076FD2A = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +126,17 @@
 				60B2912F236178460076FD2A /* AppDelegate.m */,
 				60B29131236178460076FD2A /* ViewController.h */,
 				60B29132236178460076FD2A /* ViewController.m */,
+				60227EAA2367202000F3405D /* Swift */,
 				60B291342361784C0076FD2A /* Assets.xcassets */,
 				60B291362361784C0076FD2A /* Main.storyboard */,
 				60B291392361784C0076FD2A /* Info.plist */,
 				60B2913A2361784C0076FD2A /* main.m */,
+				60B29174236181140076FD2A /* CPPAdapter.cpp */,
+				60B29176236182D00076FD2A /* LinkList */,
+				60B2915E23617D9A0076FD2A /* LinkTable.cpp */,
+				60B2915F23617D9A0076FD2A /* LinkTable.hpp */,
 				60B2913C2361784C0076FD2A /* AlgorithmWithMac.entitlements */,
+				60227EA723667E7000F3405D /* AlgorithmWithMac-Bridging-Header.h */,
 			);
 			path = AlgorithmWithMac;
 			sourceTree = "<group>";
@@ -129,6 +157,13 @@
 				60B291522361784C0076FD2A /* Info.plist */,
 			);
 			path = AlgorithmWithMacUITests;
+			sourceTree = "<group>";
+		};
+		60B29176236182D00076FD2A /* LinkList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LinkList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +233,7 @@
 				TargetAttributes = {
 					60B2912A236178460076FD2A = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					60B291402361784C0076FD2A = {
 						CreatedOnToolsVersion = 11.0;
@@ -260,9 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B2916023617D9A0076FD2A /* LinkTable.cpp in Sources */,
 				60B29133236178460076FD2A /* ViewController.m in Sources */,
 				60B2913B2361784C0076FD2A /* main.m in Sources */,
+				60227EA923667E7000F3405D /* PPLinkList.swift in Sources */,
+				60B29175236181140076FD2A /* CPPAdapter.cpp in Sources */,
+				60227EAC2367209E00F3405D /* PPCodeEntry.swift in Sources */,
 				60B29130236178460076FD2A /* AppDelegate.m in Sources */,
+				60227EAE236720B400F3405D /* PPTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AlgorithmWithMac/AlgorithmWithMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,6 +474,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.AlgorithmWithMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlgorithmWithMac/AlgorithmWithMac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -439,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AlgorithmWithMac/AlgorithmWithMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -449,12 +495,15 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoapods.AlgorithmWithMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlgorithmWithMac/AlgorithmWithMac-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		60B291592361784C0076FD2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -474,6 +523,7 @@
 		60B2915A2361784C0076FD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -493,6 +543,7 @@
 		60B2915C2361784C0076FD2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AlgorithmWithMacUITests/Info.plist;
@@ -510,6 +561,7 @@
 		60B2915D2361784C0076FD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AlgorithmWithMacUITests/Info.plist;
