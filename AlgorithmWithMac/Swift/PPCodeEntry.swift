@@ -19,6 +19,9 @@ open class PPCodeEntry : NSObject {
     
     @objc func printLog() -> Void {
         print("Swft算法入口")
+        let longestPalindromicSubstringObj = LongestPalindromicSubstring.init()
+        let longestPalindromicSubstring = longestPalindromicSubstringObj.longestPalindrome("iambabygirl")
+        
         let tree = PPSearchTree.init(rootNode: nil)
         tree.insert(4)
         tree.insert(1)

@@ -44,7 +44,7 @@ open class PPSearchTree: NSObject {
             print("insert num=\(num)")
         }
     }
-    
+    //获取父节点，然后插入到这个父节点左边或右边
     func getPrev(num:Int,find:Bool) -> PPSearchTreeNode? {
         let point = self.rootNode
         var res:Array<PPSearchTreeNode> = []
