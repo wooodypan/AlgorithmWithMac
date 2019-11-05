@@ -19,7 +19,9 @@ open class PPCodeEntry : NSObject {
     
     @objc func printLog() -> Void {
         print("Swft算法入口")
-        ThreeSum.threeSum(nums: [1,-2+3,3,-1+3,2,0+1,4], target: 0)
+        let aaa = FirstMissingPositive.firstMissingPositive([1,1,-2,3,4])
+//        ThreeSum.threeSum(nums: [1,-2+3,3,-1+3,2,0+1,4], target: 0)
+        
 //        let res = MajorityElement.majorityElement([1,3,2,3,2,4]);
         
 //        let list1 = PPSinglyLinkedList.init(head: PPLinkedListNode(1))
