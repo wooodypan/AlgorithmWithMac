@@ -13,6 +13,9 @@
 		6063B073236967A000868CDA /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6063B072236967A000868CDA /* LongestPalindromicSubstring.swift */; };
 		6098151F237049200038FA91 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098151E237049200038FA91 /* ThreeSum.swift */; };
 		609815452370722F0038FA91 /* FirstMissingPositive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609815442370722F0038FA91 /* FirstMissingPositive.swift */; };
+		60981547237126270038FA91 /* PPQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60981546237126270038FA91 /* PPQueue.swift */; };
+		60981549237128980038FA91 /* PPStackOrQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60981548237128980038FA91 /* PPStackOrQueue.swift */; };
+		6098154B23717B710038FA91 /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6098154A23717B710038FA91 /* ValidParentheses.swift */; };
 		60B29130236178460076FD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2912F236178460076FD2A /* AppDelegate.m */; };
 		60B29133236178460076FD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B29132236178460076FD2A /* ViewController.m */; };
 		60B291352361784C0076FD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B291342361784C0076FD2A /* Assets.xcassets */; };
@@ -52,6 +55,9 @@
 		6063B072236967A000868CDA /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		6098151E237049200038FA91 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 		609815442370722F0038FA91 /* FirstMissingPositive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMissingPositive.swift; sourceTree = "<group>"; };
+		60981546237126270038FA91 /* PPQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPQueue.swift; sourceTree = "<group>"; };
+		60981548237128980038FA91 /* PPStackOrQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStackOrQueue.swift; sourceTree = "<group>"; };
+		6098154A23717B710038FA91 /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
 		60B2912B236178460076FD2A /* AlgorithmWithMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmWithMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B2912E236178460076FD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60B2912F236178460076FD2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,10 +115,13 @@
 				60227EAD236720B400F3405D /* PPTree.swift */,
 				60B5F7E4236C879800908E58 /* PPArrayDemo.swift */,
 				60B5F7E6236CFDE700908E58 /* PPStackDemo.swift */,
+				60981546237126270038FA91 /* PPQueue.swift */,
+				60981548237128980038FA91 /* PPStackOrQueue.swift */,
 				6063B072236967A000868CDA /* LongestPalindromicSubstring.swift */,
 				60B5F7EA236FCD0200908E58 /* MajorityElement.swift */,
 				6098151E237049200038FA91 /* ThreeSum.swift */,
 				609815442370722F0038FA91 /* FirstMissingPositive.swift */,
+				6098154A23717B710038FA91 /* ValidParentheses.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -329,9 +338,12 @@
 				60B5F7E5236C879800908E58 /* PPArrayDemo.swift in Sources */,
 				60B29133236178460076FD2A /* ViewController.m in Sources */,
 				6098151F237049200038FA91 /* ThreeSum.swift in Sources */,
+				60981547237126270038FA91 /* PPQueue.swift in Sources */,
 				60B2913B2361784C0076FD2A /* main.m in Sources */,
 				60227EA923667E7000F3405D /* PPLinkList.swift in Sources */,
 				60B5F7E7236CFDE700908E58 /* PPStackDemo.swift in Sources */,
+				6098154B23717B710038FA91 /* ValidParentheses.swift in Sources */,
+				60981549237128980038FA91 /* PPStackOrQueue.swift in Sources */,
 				60B29175236181140076FD2A /* CPPAdapter.cpp in Sources */,
 				60227EAC2367209E00F3405D /* PPCodeEntry.swift in Sources */,
 				60B29130236178460076FD2A /* AppDelegate.m in Sources */,

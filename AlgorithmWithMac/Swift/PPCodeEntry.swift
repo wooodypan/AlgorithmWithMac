@@ -19,7 +19,30 @@ open class PPCodeEntry : NSObject {
     
     @objc func printLog() -> Void {
         print("Swft算法入口")
-        let aaa = FirstMissingPositive.firstMissingPositive([1,1,-2,3,4])
+        let aaa = ValidParentheses.init()
+        aaa.isValid("{[]}")
+//        // 用栈实现队列
+//        var myQueue : MyQueue = MyQueue.init()
+//        myQueue.enqueue(1)
+//        myQueue.enqueue(2)
+//        myQueue.enqueue(3)
+//        myQueue.dequeue()
+//        myQueue.enqueue(4)
+//        myQueue.enqueue(5)
+//        myQueue.dequeue()
+        
+//        // 用数组实现队列
+//        var queue = PPIntegerQueue.init()
+//        queue.enqueue(1)
+//        queue.enqueue(2)
+//        queue.enqueue(3)
+//        queue.dequeue()
+//        queue.enqueue(4)
+//        queue.enqueue(5)
+//        queue.dequeue()
+        
+//        let aaa = FirstMissingPositive.firstMissingPositive([1,1,-2,3,4])
+        
 //        ThreeSum.threeSum(nums: [1,-2+3,3,-1+3,2,0+1,4], target: 0)
         
 //        let res = MajorityElement.majorityElement([1,3,2,3,2,4]);
