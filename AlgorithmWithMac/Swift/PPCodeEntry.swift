@@ -19,8 +19,9 @@ open class PPCodeEntry : NSObject {
     
     @objc func printLog() -> Void {
         print("Swft算法入口")
-        let aaa = ValidParentheses.init()
-        aaa.isValid("{[]}")
+//        let aaa = ValidParentheses.init()
+//        aaa.isValid("{[]}")
+        
 //        // 用栈实现队列
 //        var myQueue : MyQueue = MyQueue.init()
 //        myQueue.enqueue(1)
@@ -80,9 +81,8 @@ open class PPCodeEntry : NSObject {
 //        let longestPalindromicSubstring = longestPalindromicSubstringObj.longestPalindrome("iambabygirl")
         
         let tree = PPSearchTree.init(rootNode: nil)
-        tree.insert(4)
-        tree.insert(1)
-        tree.insert(2)
-        tree.insert(5)
+        tree.pp_insertNodes([10,7,12,3,9,11,1,4,8,2,5])
+        let array = tree.inorderTraversal(root: tree.rootNode)
+        print(array)
     }
 }
