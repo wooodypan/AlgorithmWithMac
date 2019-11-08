@@ -18,7 +18,7 @@ class PPTreeNode: NSObject {
         self.value = value
     }
     override var description : String {
-        return "Node (\(self.leftNode?.value ?? 0))-\(self.value)-(\(self.rightNode?.value ?? 0))"
+        return "\(self.leftNode?.value ?? 0)-(\(self.value))-\(self.rightNode?.value ?? 0)"
     }
 }
 
@@ -82,6 +82,8 @@ open class PPSearchTree: NSObject {
         return res
     }
     ///MARK:中序遍历
+    //图片辅助理解： https://i.loli.net/2019/11/08/EXNtZ7FOAI1mBWU.png
+    //由图可以看出，首先要找到最左侧的叶子节点存到栈里，然后每次出栈一个节点，遍历打印该节点和右节点
     func inorderTraversal(root: PPTreeNode?) -> [Int] {
         var res = [Int]()
         var stack = [PPTreeNode]()
@@ -100,23 +102,72 @@ open class PPSearchTree: NSObject {
 //        inorderTraversal(root: node?.leftNode)
 //        inorderTraversal(root: node?.leftNode)
         while !stack.isEmpty || node != nil {
-            print("node=\(node)")
+            print("当前node=\(String(describing: node))")
             if node != nil {
                 stack.append(node!)
-//                if node!.leftNode == nil {
-//                    res.append(node!.value)
-//                }
                 node = node!.leftNode
             } else {
                 node = stack.removeLast()
-//                res.append(lastNode.leftNode?.value ?? -1)
                 res.append(node?.value ?? -1 )
-//                res.append(lastNode.rightNode?.value ?? -1)
                 node = node?.rightNode
             }
         }
         
         return res
+    }
+    
+    ///树的层级遍历，每一层不分组
+    func pp_levelTraverse(root: PPTreeNode?) -> [Int] {
+        var res = [Int]()
+        var queue = [PPTreeNode]()
+        var node = root
+        queue.append(node!)
+        while !queue.isEmpty {
+            node = queue.removeFirst()
+            print("当前node=\(String(describing: node))")
+            res.append(node?.value ?? -1 )
+            if node?.leftNode != nil {
+                queue.append(node!.leftNode! )
+                print("入列=\(node?.leftNode?.value ?? 0)")
+            }
+            if node?.rightNode != nil {
+                queue.append(node!.rightNode! )
+                print("入列=\(node?.rightNode?.value ?? 0)")
+            }
+//            print("Queue=\(queue)")
+        }
+        return res
+
+    }
+    ///树的层级遍历，每一层分组
+    func levelOrder(root: PPTreeNode?) -> [[Int]] {
+      var res = [[Int]]()
+      // 用数组来实现队列
+      var queue = [PPTreeNode]()
+
+      if let root = root {
+        queue.append(root)
+      }
+
+      while queue.count > 0 {
+        let size = queue.count
+        var level = [Int]()
+
+        for _ in 0 ..< size {
+          let node = queue.removeFirst()
+
+          level.append(node.value)
+          if let left = node.leftNode {
+            queue.append(left)
+          }
+          if let right = node.rightNode {
+            queue.append(right)
+          }
+        }
+        res.append(level)
+      }
+
+      return res
     }
     func insert(_ num:Int) -> Void {
         let node = PPSearchTreeNode.init(value: num)

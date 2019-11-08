@@ -80,9 +80,11 @@ open class PPCodeEntry : NSObject {
 //        let longestPalindromicSubstringObj = LongestPalindromicSubstring.init()
 //        let longestPalindromicSubstring = longestPalindromicSubstringObj.longestPalindrome("iambabygirl")
         
+        
+        
         let tree = PPSearchTree.init(rootNode: nil)
         tree.pp_insertNodes([10,7,12,3,9,11,1,4,8,2,5])
-        let array = tree.inorderTraversal(root: tree.rootNode)
+        let array = tree.pp_levelTraverse(root: tree.rootNode)
         print(array)
     }
 }
